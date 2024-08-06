@@ -1,0 +1,24 @@
+
+/* Default: hide the element */
+.custom-hidden {
+  display: none;
+}
+
+.cust-hidden {
+    display: none;
+    
+  }
+/* Show the element for screens larger than 600px */
+@media (min-width: 600px) {
+  .custom-hidden {
+        display: block;
+  }
+}
+
+@media (min-width: 830px) {
+    .cust-hidden {
+        display: block;
+        display: flex;
+        flex: row;
+    }
+}

@@ -1,0 +1,25 @@
+/* src/components/HeroSection.css */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.4s, opacity 0.8s;
+}
+
+.ripple:active::before {
+  transform: scale(3);
+  opacity: 1;
+}
